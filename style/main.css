@@ -1,0 +1,131 @@
+body {
+  background-color: #000428;
+  color: #fff;
+  height: 100vh;
+  margin: 0%;
+}
+
+#main-container {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+svg {
+  display: block;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+
+#title-field {
+  width: 70%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  margin: auto;
+}
+
+#title-field h1 {
+  font-size: 4.69em;
+}
+
+button {
+  height: 1.5em;
+  background-color: #6B00F2;
+  width: 70%;
+  font-size: 2.26em;
+  color: #fff;
+  border-radius: 1em;
+  border-color: #6B00F2;
+}
+
+label {
+  font-size: 3.75em;
+  float: left;
+}
+
+form {
+  width: 100%;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  margin: auto;
+  width: 100%;
+  font-size: 1.8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+input:focus {
+  border: 3px solid #6B00F2;
+}
+
+button,
+input,
+label {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.row {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.row:nth-child(1) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 611px) and (max-width: 1200px) {
+  #main-container {
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+  #title-field {
+    -webkit-transform: none;
+            transform: none;
+    width: 90%;
+    margin: auto;
+  }
+  svg {
+    display: block;
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 610px) {
+  #main-container {
+    display: block;
+  }
+  #title-field {
+    -webkit-transform: none;
+            transform: none;
+    width: 90%;
+    margin: auto;
+  }
+  svg {
+    display: block;
+    width: 40%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,36 @@
+$main-bg-color: #000428;
+$secondary-bg-color: #6B00F2;
+$main-color: #fff;
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: $secondary-bg-color;
+  display: flex;
+  position: fixed;
+}
+
+#brand-logo {
+  svg {
+    margin: 0px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  height: 10vh;
+  flex: 1;
+}
+
+.text-container {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-elem {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto 1em;
+  font-size: 2vw;
+}

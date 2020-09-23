@@ -1,0 +1,127 @@
+$main-bg-color: #000428;
+$secondary-bg-color: #6B00F2;
+$main-color: #fff;
+
+body {
+  background-color: $main-bg-color;
+  color: $main-color;
+  height: 100vh;
+  margin: 0%;
+}
+
+#main-container {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+svg {
+  display: block;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+
+#title-field {
+  h1 {
+    font-size: 4.69em;
+  }
+
+  width: 70%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin: auto;
+}
+
+button {
+  height: 1.5em;
+  background-color: $secondary-bg-color;
+  width: 70%;
+  font-size: 2.26em;
+  color: $main-color;
+  border-radius: 1em;
+  border-color: $secondary-bg-color;
+}
+
+label {
+  font-size: 3.75em;
+  float: left;
+}
+
+form {
+  width: 100%;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  margin: auto;
+  width: 100%;
+  font-size: 1.8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+input:focus {
+  border: 3px solid $secondary-bg-color;
+}
+
+button,
+input,
+label {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.row {
+  flex: 1;
+  order: 1;
+}
+
+.row:nth-child(1) {
+  order: 2;
+}
+
+@media (min-width: 611px) and (max-width: 1200px) {
+  #main-container {
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+
+  #title-field {
+    transform: none;
+    width: 90%;
+    margin: auto;
+  }
+
+  svg {
+    display: block;
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 610px) {
+  #main-container {
+    display: block;
+  }
+
+  #title-field {
+    transform: none;
+    width: 90%;
+    margin: auto;
+  }
+
+  svg {
+    display: block;
+    width: 40%;
+    margin: auto;
+  }
+
+}
